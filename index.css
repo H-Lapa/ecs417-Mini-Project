@@ -1,0 +1,114 @@
+body {
+	background-color: white;
+}
+
+/* Navigation */
+nav {
+	background-color: blue;
+	color: white;
+}
+
+nav>ul {
+	display: flex;
+	flex-direction: row;
+	height: 5vh;
+	width: 50vw;
+	margin: auto;
+}
+
+nav>ul>li {
+	margin: auto;
+}
+
+nav a {
+	color: white;
+}
+
+/* Arrow */
+
+.arrow {
+	border: solid darkblue;
+	border-width: 0 2vh 2vh 0;
+	display: inline-block;
+	padding: 4vh;
+}
+
+.down {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+/* front-page */
+
+.initial {
+	background-color: lightblue;
+}
+
+.initial>h1 {
+	font-size: 6em;
+	font-family: sans-serif;
+	padding-left: 2.2em;
+	padding-right: 2.2em;
+	padding-top: 1.2em;
+}
+
+.initial>p {
+	font-size: 3em;
+	font-family: 'Courier New', Courier, monospace;
+	padding-left: 8em;
+	padding-right: 5em;
+	padding-top: .5em;
+}
+
+.initial>div {
+	padding-left: 47vw;
+	padding-top: 35vh;
+	padding-bottom: 11vh;
+}
+
+/* Second page belwo the initial start page */
+
+.second {
+	height: 93vh;
+	width: 50vw;
+	margin: auto;
+	margin-top: 3vh;
+}
+
+.second h2 {
+	font-size: 2em;
+	margin-top: .25em;
+}
+
+.second>div {
+	display: flex;
+	flex-direction: row;
+}
+
+/* Profile image */
+img {
+	width: 12em;
+}
+
+/* dates in bold */
+.second strong {
+	font-weight: bold;
+}
+
+.second p {
+	margin-top: 1vh;
+}
+
+/* footer */
+
+footer>div>section {
+	display: flex;
+	flex-direction: row;
+	margin-left: 1em;
+}
+
+footer>div>section>* {
+	margin-left: 1em;
+	font-style: italic;
+	font-weight: 900;
+}
