@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<script src="https://kit.fontawesome.com/9114d9acc8.js" crossorigin="anonymous"></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="includes/navbar/navbar.css">
@@ -39,7 +38,7 @@
 		//this checks if a session userid has been set, if so it determines the user is logged in
 		//so it shows text saying you are logged in and provides a log out button
 		echo '<p>You are logged in</p>';
-		echo '<a id="out" href="includes/logout.php" style="color:black;">Log Out Btn</a>';
+		echo '<a id="out" href="logout.php" style="color:black;">Log Out Btn</a>';
 	}
 	else {
 		echo '<p>You are logged out</p>';
