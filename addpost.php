@@ -11,7 +11,7 @@ if (isset($_POST['newPost'])) {
         exit();
     }
     else {
-        $insert = "INSERT INTO `posts` (`date`, `time`, `title`, `body`) VALUES (current_timestamp(), TIME(NOW()), '$title', '$desc')";
+        $insert = "INSERT INTO `posts` (`datetime`, `date`, `time`, `title`, `body`) VALUES (current_timestamp(), current_timestamp(), TIME(NOW()), '$title', '$desc')";
         if ($conn->query($insert) === TRUE) {
             echo "record inserted successfully";
         } else {
