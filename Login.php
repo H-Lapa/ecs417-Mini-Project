@@ -10,7 +10,8 @@
 </head>
 
 <body>
-	<!-- <?php include "includes/navbar/navbar.php"; ?> this transfers the code for the navigation bar -->
+	<link rel="stylesheet" href="navbar.css">
+	<?php include 'navbar.html'; ?>
 	<div class="flex-c"> <! -- this class is the whole  -->
 		<form action="loginpro.php" method="POST">
 			<h2>login</h2>

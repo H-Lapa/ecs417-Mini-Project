@@ -10,6 +10,8 @@
 </head>
 
 <body>
+	<link rel="stylesheet" href="navbar.css">
+	<?php include 'navbar.html'; ?>
 	<!-- form for new blog submission -->
 	<form action="addpost.php" method="POST">
 		<h2>New-Blog</h2>

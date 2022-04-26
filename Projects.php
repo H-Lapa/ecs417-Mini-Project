@@ -10,6 +10,9 @@
 </head>
 
 <body>
+	<link rel="stylesheet" href="navbar.css">
+	<?php include 'navbar.html'; ?>
+	
 	<div class="project">
 		<div class="txt">
 			<h2 class="project-title">01 / PROJECT NAME</h2>

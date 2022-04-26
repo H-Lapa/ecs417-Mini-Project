@@ -2,28 +2,6 @@ body {
 	background-color: white;
 }
 
-/* Navigation */
-nav {
-	background-color: blue;
-	color: white;
-}
-
-nav>ul {
-	display: flex;
-	flex-direction: row;
-	height: 5vh;
-	width: 50vw;
-	margin: auto;
-}
-
-nav>ul>li {
-	margin: auto;
-}
-
-nav a {
-	color: white;
-}
-
 /* Arrow */
 
 .arrow {

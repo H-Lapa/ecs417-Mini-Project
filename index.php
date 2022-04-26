@@ -11,15 +11,9 @@
 </head>
 
 <body>
-	<nav>
-		<ul>
-			<li><a href="">Hugo</a></li>
-			<li><a href="Projects.html">Projects</a></li>
-			<li><a href="blog.html">Blog</a> </li>
-			<li><a href="email.html">Contact</a></li>
-			<li><a href="Login.php">Login</a></li>
-		</ul>
-	</nav>
+    
+    <link rel="stylesheet" href="navbar.css">
+	<?php include 'navbar.html'; ?>
 
 	<main>
 		<div class="initial">
