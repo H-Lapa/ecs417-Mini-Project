@@ -39,7 +39,7 @@ if (isset($_POST['sign-in'])) {
                     $_SESSION['username'] = $row['username'];
 
                     //now the user is linked to the index page, with success in the url, confirming tthe log in
-                    header("Location: ./new-blog.html");
+                    header("Location: ./index.php");
                     exit(); 
                 }
                 else {

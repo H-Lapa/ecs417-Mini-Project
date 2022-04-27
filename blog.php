@@ -12,7 +12,16 @@
 
 <body>
 	<link rel="stylesheet" href="navbar.css">
-	<?php include 'navbar.php'; ?>
+	<?php 
+	include 'navbar.php'; 
+	$num = 0;
+	function numIncrement(&$var) {
+		$var++;
+		return $var;
+	}
+
+	
+	?>
 
 	<div id="new-blog">
 
@@ -39,7 +48,7 @@
 		?>
 		<div class="project">
 			<div class="txt">
-				<h2 class="project-title">01 / <?php echo $row['title']; ?></h2>
+				<h2 class="project-title">0<?php echo numIncrement($num); ?> / <?php echo $row['title']; ?></h2>
 				<p class="project-desc"> <?php echo $row['body']; ?> </p>
 				<p class=""> <?php echo $row['datetime']; ?> </p>
 			</div>

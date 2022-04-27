@@ -10,7 +10,7 @@
         <li><a href="email.php">Contact</a></li>
         <?php
         // this is an if statement questioning whether someone has already logged in
-          if (isset($_SESSION['userid'])) {
+          if (isset($_SESSION['username'])) {
             echo '<li><a href="logout.php">Logout</a></li>';
             //if they are logged in they show the account icon with the link to the account page
           }
