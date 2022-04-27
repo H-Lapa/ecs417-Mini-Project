@@ -42,7 +42,10 @@
 
 	<?php 
 	require 'dbh.php';
-	 $sql = "SELECT * FROM posts";
+
+    $month = $_POST['Month'];
+    $nmonth = date("m", strtotime($month));
+	 $sql = "SELECT * FROM posts WHERE MONTH(datetime) = $nmonth";
 	 $result = $conn->query($sql);
 	 $row = $result->fetch_all(MYSQLI_ASSOC);
 	 
