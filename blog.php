@@ -11,10 +11,13 @@
 </head>
 
 <body>
+	<link rel="stylesheet" href="navbar.css">
+	<?php include 'navbar.php'; ?>
+
 	<div id="new-blog">
 
 		<aside>
-			<a href="new-blog.html">New Blog +</a>
+			<a href="new-blog.php">New Blog +</a>
 		</aside>
 	</div>
 
@@ -38,6 +41,7 @@
 			<div class="txt">
 				<h2 class="project-title">01 / <?php echo $row['title']; ?></h2>
 				<p class="project-desc"> <?php echo $row['body']; ?> </p>
+				<p class=""> <?php echo $row['datetime']; ?> </p>
 			</div>
 		</div>
 		<hr>

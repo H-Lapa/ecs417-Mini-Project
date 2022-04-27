@@ -11,7 +11,7 @@
 
 <body>
 	<link rel="stylesheet" href="navbar.css">
-	<?php include 'navbar.html'; ?>
+	<?php include 'navbar.php'; ?>
 	
 	<div class="project">
 		<div class="txt">

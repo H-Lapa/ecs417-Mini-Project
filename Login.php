@@ -11,7 +11,7 @@
 
 <body>
 	<link rel="stylesheet" href="navbar.css">
-	<?php include 'navbar.html'; ?>
+	<?php include 'navbar.php'; ?>
 	<div class="flex-c"> <! -- this class is the whole  -->
 		<form action="loginpro.php" method="POST">
 			<h2>login</h2>

@@ -13,7 +13,7 @@
 <body>
     
     <link rel="stylesheet" href="navbar.css">
-	<?php include 'navbar.html'; ?>
+	<?php include 'navbar.php'; ?>
 
 	<main>
 		<div class="initial">

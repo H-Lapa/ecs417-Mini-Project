@@ -36,8 +36,7 @@ if (isset($_POST['sign-in'])) {
                 elseif ($pwdCheck == true) {
                     //however if true then the log in is a success
                     session_start();
-                    $_SESSION['userid'] = $row['UserID'];
-                    $_SESSION['useruid'] = $row['uuid'];
+                    $_SESSION['username'] = $row['username'];
 
                     //now the user is linked to the index page, with success in the url, confirming tthe log in
                     header("Location: ./new-blog.html");

@@ -7,7 +7,7 @@ if (isset($_POST['newPost'])) {
     require 'dbh.php';
 
     if (empty($title) || empty($desc)) {
-        header("Location: ./new-blog.html");
+        header("Location: ./new-blog.php");
         exit();
     }
     else {

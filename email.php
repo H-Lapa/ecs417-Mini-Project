@@ -11,6 +11,9 @@
 </head>
 
 <body>
+	<link rel="stylesheet" href="navbar.css">
+	<?php include 'navbar.php'; ?>
+
 	<!-- form for new contact request -->
 	<form action="">
 		<h2>Inquiry</h2>
