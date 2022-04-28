@@ -10,6 +10,10 @@
 
 }
 
+body {
+	background-color: #035A6D;
+}
+
 label {
 	color: white;
 }

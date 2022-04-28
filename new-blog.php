@@ -22,8 +22,8 @@
 		<input type="text" name="Description" id="desc">
 
 		<button type="submit" id="submit" name="newPost">submit</button>
+		<button id="clear" value="clear">Clear</button>
 	</form>
-	<button id="clear" >Clear</button>
 
 	<script src="addPost.js"></script>
 </body>
