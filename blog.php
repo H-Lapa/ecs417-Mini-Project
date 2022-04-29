@@ -44,17 +44,38 @@
 	require 'dbh.php';
 	 $sql = "SELECT * FROM posts";
 	 $result = $conn->query($sql);
-	 $row = $result->fetch_all(MYSQLI_ASSOC);
+	//  $row = $result->fetch_all(MYSQLI_ASSOC);
 	 
-	 $columns = array_column ($row, 'datetime');
-	 array_multisort($columns, SORT_DESC, $row);
+	//  $columns = array_column ($row, 'datetime');
+	//  array_multisort($columns, SORT_DESC, $row);
 
+	$datas = array();
+
+	if(mysqli_num_rows($result) > 0) {
+		while ($row = mysqli_fetch_assoc($result)) {
+			$datas[] = $row;
+		}
+	}
+
+	$length = count ($datas);
+	for ($i=0; $i < $length; $i++) { 
+		for ($j=0; $j < ($length-1-$i); $j++) { 
+			if (strtotime($datas[$j]['datetime']) < strtotime($datas[$j+1]['datetime']) ) {
+				$temp = $datas[$j];
+				$datas[$j] = $datas[$j+1];
+				$datas[$j+1] = $temp;
+			}
+		}
+	}
+	
+	print_r($datas);
+	
 	
 	?>
 
 	<main>
 		<?php 
-			foreach ($row as $row) {
+			foreach ($datas as $row) {
 		
 		?>
 		<div class="project">
