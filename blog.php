@@ -49,33 +49,33 @@
 	//  $columns = array_column ($row, 'datetime');
 	//  array_multisort($columns, SORT_DESC, $row);
 
-	$datas = array();
+	$table = array();
 
 	if(mysqli_num_rows($result) > 0) {
 		while ($row = mysqli_fetch_assoc($result)) {
-			$datas[] = $row;
+			$table[] = $row;
 		}
 	}
 
-	$length = count ($datas);
+	$length = count ($table);
 	for ($i=0; $i < $length; $i++) { 
 		for ($j=0; $j < ($length-1-$i); $j++) { 
-			if (strtotime($datas[$j]['datetime']) < strtotime($datas[$j+1]['datetime']) ) {
-				$temp = $datas[$j];
-				$datas[$j] = $datas[$j+1];
-				$datas[$j+1] = $temp;
+			if (strtotime($table[$j]['datetime']) < strtotime($table[$j+1]['datetime']) ) {
+				$t = $table[$j];
+				$table[$j] = $table[$j+1];
+				$table[$j+1] = $t;
 			}
 		}
 	}
 	
-	print_r($datas);
+	print_r($table);
 	
 	
 	?>
 
 	<main>
 		<?php 
-			foreach ($datas as $row) {
+			foreach ($table as $row) {
 		
 		?>
 		<div class="project">

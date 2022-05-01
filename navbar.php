@@ -4,7 +4,7 @@
 
 <nav>
     <ul>
-        <li><a href="">Hugo</a></li>
+        <li><a href="index.php">Hugo</a></li>
         <li><a href="Projects.php">Projects</a></li>
         <li><a href="blog.php">Blog</a> </li>
         <li><a href="email.php">Contact</a></li>

@@ -230,3 +230,18 @@ h2 {
 	margin-top: 10px;
 
 }
+
+body, ul, li, a{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+
+ol,
+ul {
+	list-style: none;
+}
