@@ -15,7 +15,7 @@
 	
 	<div class="project">
 		<div class="txt">
-			<h2 class="project-title">01 / PROJECT NAME</h2>
+			<h2 class="project-title">01 / NEXTjs TO-DO LIST</h2>
 			<p class="project-desc">Goblin concept digital sculpture with human-like skin. Learned a lot of quick tips
 				and look development.</p>
 			<p class="technologies">Sculpted in ZBrush, Retopologized and UVs done in Maya, Textured in Mari, Rendered
@@ -28,7 +28,7 @@
 
 	<div class="project">
 		<div class="txt">
-			<h2 class="project-title">02 / PROJECT NAME</h2>
+			<h2 class="project-title">02 / REACT WEATHER APP</h2>
 			<p class="project-desc">Goblin concept digital sculpture with human-like skin. Learned a lot of quick tips
 				and look development.</p>
 			<p class="technologies">Sculpted in ZBrush, Retopologized and UVs done in Maya, Textured in Mari, Rendered

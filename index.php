@@ -18,7 +18,7 @@
 	<main>
 		<div class="initial">
 			<h1>Hugo Lapa</h1>
-			<p>Aspiring Software engineer, built like Jeff Bezos</p>
+			<p>Computer Science Student, Aspiring Software engineer</p>
 			<div>
 				<i class="arrow down"></i>
 			</div>
@@ -29,8 +29,7 @@
                 <div>
                     <div>
                         <h2>About Hugo</h2>
-                        <p>Details about myself and stuff you know all that stuff about me being a sofwtare developer and
-                            there is more</p>
+                        <p>Experienced Representative with a demonstrated history of working in the higher education industry. Skilled in Web Design, Python (Programming Language), Interaction Design, Communication, and Java. Strong professional with a Bachelor's of Science focused in Computer Science from Queen Mary University of London. </p>
                     </div>
     
                     <figure>
@@ -40,16 +39,16 @@
                 </div>
                 <hr>
                 <h2>Experience</h2>
-                <hr>
                 <h3><strong>Kodland ~</strong> Programming Tutor</h3>
                 <h3><strong>MyTutor ~</strong> Computer Science / Mathematics Tutor</h3>
-                <h2>Education</h2>
                 <hr>
+                <h2>Education</h2>
                 <p><strong>2021 - 2024</strong> Bsc Computer science, Queen Mary University of London</p>
                 <p><strong>2019 - 2021</strong> A levels - Economics, Computer Science, Mathematics ~ AAA</p>
-                <h2>Skills and Acheivements</h2>
                 <hr>
+                <h2>Skills and Acheivements</h2>
                 <p> <strong>CS50 ~</strong> Harvard computer science course</p>
+                <hr>
     
             </div>
         </article>
@@ -63,7 +62,7 @@
 
 				<h4><a
 						href="https://www.homebunch.com/wp-content/uploads/2019/11/interior-design-4028-Churchill-ForWeb-9.jpg">Home</a>
-					| <a href="">Teaching</a> | <a href="">Research</a></h4>
+					| <a href="https://github.com/H-Lapa">github</a> | <a href="https://www.linkedin.com/in/hugo-lapa/">linkedin</a></h4>
 
 				<p><em><strong>Copyright @ 2022 Hugo Lapa</strong></em></p>
 			</section>

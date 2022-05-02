@@ -9,6 +9,10 @@ form {
 	border-radius: 1em;
 }
 
+body {
+	background-color: #035A6D;
+}
+
 h2 {
 	margin: auto;
 	font-weight: 900;
