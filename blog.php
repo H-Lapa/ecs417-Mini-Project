@@ -49,14 +49,17 @@
 	//  $columns = array_column ($row, 'datetime');
 	//  array_multisort($columns, SORT_DESC, $row);
 
+	//array for the table values
 	$table = array();
 
+	//inserting values from databas etable into array
 	if(mysqli_num_rows($result) > 0) {
 		while ($row = mysqli_fetch_assoc($result)) {
 			$table[] = $row;
 		}
 	}
 
+	//sorting the array using bubble sort based on date
 	$length = count ($table);
 	for ($i=0; $i < $length; $i++) { 
 		for ($j=0; $j < ($length-1-$i); $j++) { 

@@ -1,5 +1,5 @@
 <?php
-	session_start();
+	session_start(); //since navbar is on all pages it starts a session as needed
 ?>
 
 <nav>

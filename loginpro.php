@@ -59,4 +59,6 @@ else {
     header("Location: ../Login.php");
     exit();
 } // the rest are just errors,so they link back to the sign in page with error in th url
+
+//has a lot of error handling
 ?>  

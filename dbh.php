@@ -1,5 +1,6 @@
 <?php
 
+//connection to the database
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT); // this is so all errors are reported 
 
 //setting the variable strings

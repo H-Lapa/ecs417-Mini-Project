@@ -43,6 +43,7 @@
 	<?php 
 	require 'dbh.php';
 
+	//gets the posts from the assigned month
     $month = $_POST['Month'];
     $nmonth = date("m", strtotime($month));
 	 $sql = "SELECT * FROM posts WHERE MONTH(datetime) = $nmonth";
