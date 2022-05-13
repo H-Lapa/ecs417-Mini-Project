@@ -9,7 +9,7 @@ if (isset($_POST['sign-in'])) {
 
     //if the fields are empty then it takes the user back to the sign in page, with an error message in url
     if (empty($uid) || empty($pass)) {
-        header("Location: ../Login.php?error=emptyfields");
+        header("Location: ./Login.php?error=emptyfields");
         exit();
     }
     else {
@@ -17,7 +17,7 @@ if (isset($_POST['sign-in'])) {
         $stmt = mysqli_stmt_init($conn);
         //if the statement isnt prepared correctly then an sql error appears
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("Location: ../Login.php?error=sqlerror");
+            header("Location: ./Login.php?error=sqlerror");
             exit();
         }
         else {
@@ -30,7 +30,7 @@ if (isset($_POST['sign-in'])) {
                 $pwdCheck = $pass == $row['password'];
                 if ($pwdCheck == false) {
                     //if the verification is fale then the password is wrong
-                    header("Location: ../Login.php?error=wrongpassword");
+                    header("Location: ./Login.php?error=wrongpassword");
                     exit();
                 }
                 elseif ($pwdCheck == true) {
@@ -43,12 +43,12 @@ if (isset($_POST['sign-in'])) {
                     exit(); 
                 }
                 else {
-                    header("Location: ../Login.php?error");
+                    header("Location: ./Login.php?error");
                     exit();
                 }
             }
             else {
-                header("Location: ../Login.php?error=nouser");
+                header("Location: ./Login.php?error=nouser");
                 exit();
             }
         }
@@ -56,7 +56,7 @@ if (isset($_POST['sign-in'])) {
 
 }
 else {
-    header("Location: ../Login.php");
+    header("Location: ./Login.php");
     exit();
 } // the rest are just errors,so they link back to the sign in page with error in th url
 
